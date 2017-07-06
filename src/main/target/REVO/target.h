@@ -143,6 +143,8 @@
 
 #define BARO
 #define USE_BARO_MS5611
+#define USE_BARO_BMP085
+#define USE_BARO_BMP280
 #endif
 
 #if defined(AIRBOTF4SD)
@@ -228,8 +230,8 @@
 // On AIRBOTF4 and AIRBOTF4SD, I2C2 and I2C3 are configurable
 #define USE_I2C
 #define USE_I2C_DEVICE_2
-#define I2C2_SCL                NONE // PB10, shared with UART3TX
-#define I2C2_SDA                NONE // PB11, shared with UART3RX
+#define I2C2_SCL                PB10 // PB10, shared with UART3TX
+#define I2C2_SDA                PB11 // PB11, shared with UART3RX
 #define USE_I2C_DEVICE_3
 #define I2C3_SCL                NONE // PA8, PWM6
 #define I2C3_SDA                NONE // PC9, CH6
